@@ -1,0 +1,138 @@
+.header-bg{
+    background-color: $color-background2 ;
+}
+
+.header-item{
+    background-color: $color-background;
+    //background-color:red;
+}
+.nav-item{
+    margin-right: 30px;
+    font-weight: 700;
+    font-size: 16px;
+}
+.logInButtonInside{
+    &:hover{
+        background-color: $color-gray-7 !important;
+        color:$color-white-0 !important;
+    }
+}
+
+#myheader{
+   position: relative !important;
+    nav {
+        float: right;
+        height: 60px;
+    }
+    img {
+        width: 50px;
+        height: 50px;
+    }
+
+    nav ul {
+        list-style: none;
+        margin-top: 15px;
+
+        li {
+            display: inline;
+            margin: 5px 25px;
+            // padding: 10px;
+            // border-bottom: 2px solid white;
+            transition: all .5s;
+            a {
+                text-decoration: none;
+                color: $color-white-0;
+                font-size: 16px;
+                letter-spacing: 1px;
+                transition: all 0.5s;
+            }
+            &:hover{
+                border-bottom: none
+            }
+            &:hover a {
+                color: $color-yellow;
+            }
+        }
+    }
+    #logInSection{
+        transition: all 0.5s;
+        .loginButton{
+            color: white;
+            margin-right: 40px;
+        }
+        #hoverLogIn{
+            position: absolute !important;
+            z-index: 10;
+            width:35%;
+            display: none;
+            right:0;
+            #hoverLoginContent{
+                position: relative;
+                left:55%;
+                transform: translateX(-50%);
+                top:15px;
+                color: black !important;
+                
+                &::after {
+                    content: " " !important;
+                    position: absolute !important;
+                    bottom: 100% !important; 
+                    left: 72% !important;
+                    margin-left: 10px;
+                    border-width: 10px;
+                    border-style: solid;
+                    border-color: transparent transparent white transparent;
+                  }
+            }
+        }
+        &:hover #hoverLogIn{
+            display:block !important;
+        }     
+        &:hover .loginButton{
+            color: $color-yellow !important;
+        } 
+    }
+    
+}
+
+#myheader {
+    @include responsive('extra-large') {
+        .teachers,
+        .students,
+        .contact {
+            display: none;
+        }
+
+        #hoverLoginContent{
+            left:40% !important;
+        }
+    }
+    @include responsive('large') {
+        #hoverLogIn{
+            #hoverLoginContent{
+                left:30% !important;
+            }
+        }
+    }
+    @include responsive('medium') {
+        .courses,
+        #search-course {
+            display: none;
+        }
+        #hoverLogIn{
+            width:53% !important;
+            #hoverLoginContent{
+                left:35% !important;
+            }
+        }
+    }
+    @include responsive('small') {
+        #hoverLogIn{
+            width:70% !important;
+            #hoverLoginContent{
+                left:40% !important;
+            }
+        }
+       
+    }
+}

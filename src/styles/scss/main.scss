@@ -1,0 +1,52 @@
+//Helper
+@import'./Helper/variable';
+@import'./Helper/mixin';
+@import './Helper/extend';
+
+//Vendor
+
+//Base
+@import'./Base/reset';
+@import'./Base/nomalize';
+// @import'./Base/customize';
+
+//Components
+// @import'./Components/button';
+
+//Layout
+@import'./Layouts/header';
+@import'./Layouts/carousel';
+@import'./Layouts/categories';
+@import'./Layouts/courseList';
+@import './Layouts/partner';
+@import './Layouts/products';
+@import './Layouts//courses';
+// @import'./Layouts/intro';
+// @import'./Layouts/courses';
+// @import'./Layouts/services';
+@import'./Layouts/students';
+@import './Layouts/teachers';
+@import './Layouts/trategy';
+@import './Layouts//comment';
+@import './Layouts/topcategories';
+@import './Layouts/knowledge';
+@import './Layouts/feedback';
+@import './Layouts/contact';
+// @import'./Layouts/banner';
+// @import'./Layouts/topCategories';
+// @import'./Layouts/feedback';
+// @import'./Layouts/company';
+
+@import './Layouts/footer';
+//Page
+//chỉ code riêng cho 
+
+@import './Layouts/login';
+@import './Layouts/register';
+
+
+@import './Layouts/adminManagement';
+
+
+//Theme
+//dark, 

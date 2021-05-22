@@ -1,0 +1,92 @@
+.carousel-control-prev{
+    position: absolute;
+    color: $color-blue;
+    top: 50%;
+    left: 2%;
+    height: 60px;
+    width: 60px;
+    line-height: 0!important;
+    text-align: center;
+    border-radius: 50%!important;
+    border: 1px solid $color-gray-1;
+    background-color: $color-black-0;
+    box-shadow: 0 0 1px 1px rgba(20,23,28,.1), 0 3px 1px 0 rgba(20,23,28,.1);
+    z-index: 100;
+    // outline: none;
+    .carousel-control-prev-icon{
+        color: $color-blue!important;
+        height: 30px;
+        width: 30px;
+    }
+
+    span{
+        @include styleText($color-blue, $fs-4, $fw-normal);
+       
+    }
+    &:hover{
+        outline: none;
+    }
+    &:focus{
+        outline: none;
+    }
+}
+.carousel-control-next{
+    position: absolute;
+    top: 50%;
+    right: 2%;
+    color: $color-blue;
+    height: 60px;
+    width: 60px;
+    line-height: 0!important;
+    text-align: center;
+    border-radius: 50%!important;
+    border: 1px solid $color-gray-1;
+    background-color: $color-black-0;
+    box-shadow: 0 0 1px 1px rgba(20,23,28,.1), 0 3px 1px 0 rgba(20,23,28,.1);
+    z-index: 100;
+    .carousel-control-next-icon{
+        color: $color-blue!important;
+        height: 30px;
+        width: 30px;
+    }
+
+    span{
+        @include styleText($color-blue, $fs-4, $fw-normal);
+       
+    }
+    &:hover{
+        outline: none;
+    }
+    &:focus{
+        outline: none;
+    }
+}
+.courses{
+    .slick-dots{
+        color: black;
+        font-size: 270px;
+        bottom: -150px;
+    }
+    .slick-next:before, .slick-prev:before{
+        color: gray;
+        font-size: 60px;
+    }
+    .slick-next{
+        right: 10px;
+    }
+    .slick-prev{
+        left: -45px;
+    }
+    .slick-slide {
+        padding: 0 15px;
+      }
+      
+      .slick-list {
+        margin: 0 2em;
+      }
+}
+
+// .btnlink{
+//     text-decoration: none;
+//     color: $color-background1;
+//  }

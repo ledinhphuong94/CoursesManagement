@@ -1,0 +1,68 @@
+footer {
+    padding: $pd-2 $pd-2 0 $pd-2;
+    .footer__content {
+        .footer__item {
+            a {
+                display: block;
+                @include styleText($color-blue, $fs-1, $fw-normal);
+                text-decoration: none;
+                line-height: 18px;
+                padding: 6px;
+                &:hover {
+                    color: $color-blue-1;
+                }
+            }
+
+            .link-active {
+                font-weight: $fw-bold-1;
+            }
+        }
+    }
+    .btn-group {
+        button {
+            border: 1px solid $color-gray-7 !important;
+            padding: $pd-3 $pd-5;
+            &:hover {
+                outline: none;
+            }
+        }
+        .dropdown-menu {
+            ul {
+                list-style: none;
+
+                li {
+                    &:hover {
+                        background-color: $color-white-cream;
+                    }
+                    a {
+                        text-decoration: none;
+                        @include styleText($color-black-light, $fs-1, $fw-bold-3);
+                        padding: $pd-0 $pd-3;
+                    }
+                }
+            }
+        }
+    }
+
+    .copyright {
+        padding:18px;
+        a {
+            img {
+                width: 110px;
+                height: 32px;
+            }
+        }
+        small {
+            @include styleText($color-gray-4, $fs-1, $fw-normal);
+        }
+        a {
+            @include styleText($color-blue, $fs-1, $fw-normal);
+            text-decoration: none;
+            line-height: 18px;
+            padding: 6px;
+            &:hover {
+                color: $color-blue-1;
+            }
+        }
+    }
+}

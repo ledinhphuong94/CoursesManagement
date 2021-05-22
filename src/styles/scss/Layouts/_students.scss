@@ -1,0 +1,46 @@
+.students {
+    padding-bottom: 30px;
+    .students__title {
+        margin-left: 10px;
+        width: 90%;
+        margin: 0 auto;
+    }
+    .students__list {
+        .nav-tabs {
+            border-bottom: none;
+            display: flex;
+            font-weight: 600;
+            width: 90%;
+            margin: 0 auto;
+            .nav-item {
+                margin: 10px 10px 10px 10px;
+                // border-bottom: 4px solid gray;
+                .nav-link {
+                    color: gray;
+                    &:hover {
+                        border: none;
+                    }
+                }
+                .active {
+                    border: none;
+                    color: black;
+                    border-bottom: 2px solid black;
+                    background-color: $color-background;
+                }
+            }
+        }
+    }
+    .student__card {
+        height: 930px;
+        overflow: hidden;
+        width: 90%;
+        margin: 0 auto;
+
+        .student__items {
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+}

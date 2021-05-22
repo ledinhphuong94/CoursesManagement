@@ -1,0 +1,88 @@
+.courses{
+    padding: 30px 0;
+    margin-bottom: 100px;
+    margin-top: 10px;
+    .courses__title{
+        margin-left: 10px;
+        width: 85%;
+        margin: 0 auto;
+    }
+    .courses__list{
+        .nav-tabs{
+            border-bottom: none;
+            display: flex;
+            font-weight: 600;
+            margin-bottom: 0;
+            width: 85%;
+            margin: 0 auto;
+            .nav-item{
+                margin: 10px 10px 10px 10px!important;
+                // border-bottom: 4px solid gray;
+                margin-bottom: 0;
+                .nav-link{
+                    color: gray;
+                    &:hover{
+                        border: none;
+                    } 
+                    margin-bottom: 0;
+                }
+                .active{
+                    border: none;
+                    color: black;
+                    // border-bottom: 2px solid black;
+                    background-color: $color-background;
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+    .courses__card{
+        // height: 930px;
+        // overflow: hidden;
+        width: 90%;
+        margin: 0 auto;
+        .courses__items{
+
+            img{
+                width: 100%;
+                height: 300px;
+            }
+            .score{
+                color: $color-blue;
+            }
+            .danhGia{
+                color: red;
+            }
+            i{
+                color: yellowgreen;
+            }
+            // &:hover{
+            //     box-shadow: 6px 6px 10px 0px #666;
+            // }
+            // .card-body{
+                
+            // }
+            // border: 1px solid black;
+        }
+          
+    }
+    .courses__status{
+        background-color: $color-background;
+        width: 85%;
+        margin: 0 auto;
+        // margin-top: 0;
+        // margin-bottom: 20px;
+        padding: 10px 0;
+        // margin-left: 10px;
+        justify-content: space-between;
+
+      
+        img{
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            text-align: right;
+            margin-right: 200px;
+        }
+    }
+}

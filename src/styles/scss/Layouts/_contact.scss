@@ -1,0 +1,13 @@
+// Responsive
+#contact{
+    @include responsive("large"){
+        .titleHeader{
+            font-size:$fs-3
+        }
+    }
+    @include responsive("small"){
+        .titleHeader{
+            font-size:$fs-5
+        }
+    }
+}

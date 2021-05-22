@@ -1,0 +1,44 @@
+.strategy{
+    h1{
+        color: $color-white-0;
+    }
+    text-align: center;
+    padding: 30px 0 30px 0;
+    .strategy__status{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 30px;
+        .strategy__status__item{
+            width: 25%!important;
+            margin: 10px 20px 10px 20px;
+            padding: 20px;
+            background-color: $color-background2;
+            i{
+                font-size: 50px;
+                margin-bottom: 20px;
+                color: $color-blue;
+            }
+            &:hover{
+                // .strategy__status__item{
+                    // box-shadow: 4px solid black;
+                    box-shadow: 6px 6px 10px 0px #666;
+                    // background-color: $color-purple;
+                // }
+                
+            }
+
+        }
+    }
+    .let__contact{      
+        background: linear-gradient(to left,#EC5252 0%,#6E1A52 100%);
+        color: white;
+        line-height: 14px;
+        padding: 20px 5px;
+        padding: 30px 0;
+        button{
+            margin-top: 20px;
+        }
+    }
+    margin-bottom: 0;
+    padding-bottom: 0;
+}

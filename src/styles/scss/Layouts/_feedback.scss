@@ -1,0 +1,121 @@
+.feedback {
+    background-color: rgba(216, 216, 218, 0.63);
+    padding: 58px 0;
+    position: relative;
+    h2 {
+        @include styleText($color-white-0, $fs-7, $fw-bold-1);
+        padding-bottom:35px;
+    }
+    .feedback_content {
+        width:70%;
+        margin-left: 50%;
+        transform: translateX(-50%);
+        background-color:rgba(216, 216, 218, 0.63);
+        display: flex !important;
+        flex-wrap: nowrap !important;
+        overflow: hidden !important;
+        .item {
+            background-color: rgba(216, 216, 218, 0.63);
+            min-height: 250px;
+            min-width:33.33%;
+            padding: 0 2px;  
+            transition: all 1s;
+            .miniItem{
+                border-radius: 5%;
+                padding: 10px;
+                height: 100%;
+                width:100%;
+                background-color: $color-white-0;
+                img {
+                    width: 64px;
+                    height: 64px;
+                    border-radius: 50%;
+                    display: inline-block;
+                    margin-right: 18px;
+                }
+                p {
+                    @include styleText($color-black-0, $fs-0 + 1, $fw-bold-3);
+                    padding-top: $pd-1;
+                }
+            }
+            
+            
+        }
+       
+    }
+    .button{
+        position: absolute;
+        top:50%;
+        background-color: rgba(255, 255, 255, 0.685);
+        &:hover{
+            background-color: $color-white-0;
+        }
+    }
+    #button1{
+        left:10%;
+    }
+    #button2{
+        right:10%;
+    }
+}
+.testimonial_companies{
+    .titleNumber{
+        color: #992337e0;
+        font-weight:"bold" !important;
+    }
+    .companies_logo{
+        padding:0 $pd-1 50px $pd-1;
+        img{
+            display: block;
+            width:100%;
+        }
+    }
+    .moreInfo{
+        padding:0 $pd-1 50px $pd-1;
+        text-align: center;
+        h4{
+            color: rgba(73, 71, 71, 0.788);
+        }
+    }
+}
+
+//Responsive
+.feedback {
+    //992px
+    @include responsive("large") {
+        .feedback__title{
+            font-size:$fs-7
+        }
+        .item {
+            min-width:50% !important;
+        }
+    }
+    //992px
+
+    @include responsive("small") {
+        .feedback__title{
+            font-size:$fs-3
+        }
+        .item {
+            min-width:100% !important;
+        }
+    }
+}
+.testimonial_companies{
+    @include responsive("large"){
+        .titleNumber{
+            font-size:$fs-2 !important;
+        }
+        .moreInfo__item{
+            font-size:$fs-5 !important;
+        }
+    }
+    @include responsive("small"){
+        .titleNumber{
+            font-size:16px !important;
+        }
+        .moreInfo__item{
+            font-size:$fs-0 !important;
+        }
+    }
+}

@@ -1,0 +1,48 @@
+.ourProducts {
+    padding: 50px 150px 50px 150px;
+    background-color: rgb(233, 231, 231);
+    .ourProducts__logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img {
+            width: 80%;
+            height: 80%;
+          
+        }
+    }
+ 
+
+    .product__features {
+        display: flex;
+        justify-content: space-between;
+        .product__items {
+            margin: 30px;
+            display: flex;
+            width: 45%;
+            border-top: 3px solid red;
+            background-color: $color-white-0;
+            border-radius: 15px;
+            img {
+                display: block;
+                width: 20%;
+                height: 20%;
+                margin-top:20px;
+                margin-left: 10px;
+                align-items: center;
+            }
+            .product__title{
+                padding: 20px;
+            }
+        }
+        .item__2{
+            border-top: 3px solid blue;
+        }
+        .item__3{
+            border-top: 3px solid green;
+        }
+        .item__4{
+            border-top: 3px solid yellow;
+        }
+    }
+}

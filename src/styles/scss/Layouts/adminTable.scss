@@ -1,0 +1,61 @@
+.loading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #t01 {
+      width:100%;
+      border: 1px solid rgba(19, 199, 223, 0.226);
+      border-collapse: collapse;
+      th, td {
+          border: 1px solid rgba(3, 63, 228, 0.178);
+          border-collapse: collapse;
+          padding: 15px;
+          text-align: left;
+          vertical-align: middle
+      }
+  
+      th {
+        background-color: #0033999f;
+        color: white;
+      }
+      tr:nth-child(even) {
+          background-color: rgba(228, 227, 227, 0.705);
+      }
+      tr:nth-child(odd) {
+        background-color: rgba(201, 201, 201, 0.651);
+      }
+      tr {
+          transition: all 0.5s;
+          &:hover{
+            background-color: rgba(247, 235, 235, 0.534);
+          }
+      }
+      .tenTK{
+        color: #f50057
+        ;
+        font-weight: bold;
+  
+      }
+      .khoaHocChoDuyet{
+        color: #f50057
+        ;
+        font-weight: bold;
+        
+        .tenKH{
+          width: 100% !important;
+        }
+      }
+  
+      
+      .disableRow{
+          opacity:0;
+          transition: all 0.5s;
+      }
+    }
+    
+   .thongBao{
+    padding-left: 10px !important;
+    color: white !important;
+  }

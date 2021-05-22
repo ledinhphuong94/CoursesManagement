@@ -1,0 +1,68 @@
+.courseList__title{
+    padding-bottom: 0;
+    color:$color-red-2;
+    font-weight: $fw-bold;
+    text-align: center;
+    width: 50%;
+    margin:auto;
+    margin-top: 80PX;
+    background: $color-white-0;
+}
+.courseList{
+    background: $color-background1;
+    margin-top: 20px;
+    .courseList_tab{
+        display: flex;
+    flex-wrap: wrap;
+
+    }
+    
+    .course-card {
+        width: 24%;
+        height: 400px;
+        margin: 6px;
+        margin-bottom: 30px;
+    }
+    .courseItem{
+        background-color: $color-white-0;
+        width: 24%;
+        height: 400px;
+        margin: 5px;
+        margin-bottom: 30px;
+     }
+
+    .courseItemImg{
+        height: 200px;
+    }
+}
+// .courseList__title{
+//     padding: 20px;
+//     color:$color-white-0;
+//     font-weight: $fw-bold;
+//     text-align: center;
+//     width: 100%;
+//     margin:auto;
+// }
+
+
+.courseList{
+    @include responsive('extra-large') {
+        .course-card {
+            width: 32%;
+            background-color: royalblue;
+        }
+    }
+    @include responsive('large') {
+        .course-card {
+            width: 48%;
+            background-color: royalblue;
+        }
+    }
+    @include responsive('small') {
+        .course-card {
+            width: 100%;
+        }
+    }
+    
+    
+}
